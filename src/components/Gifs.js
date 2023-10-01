@@ -59,16 +59,18 @@ export default function Gifs({ title }) {
             <div class="grid grid-cols-3 grid-flow-row gap-2 py-4">
               {gifs.map((item, index) => {
                 return (
-                  <div
+                  <Link
                     class="border-solid border-black border-4 rounded-xl hover:cursor-pointer hover:border-mnkz-tan overflow-hidden"
                     key={index}
+                    to={item}
+                    target="_blank"
                   >
                     <img
                       src={item}
                       class="w-full max-w-[200px] aspect-square block object-cover"
                       alt="Gif"
                     />
-                  </div>
+                  </Link>
                 );
               })}
             </div>

@@ -30,7 +30,7 @@ export default function MVP({ title }) {
               <h1 className="text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight mb-4 text-shadow-custom-sm md:text-shadow-custom">
                 Community Champions
               </h1>
-              <p className="text-lg md:text-xl lg:text-2xl text-black">
+              <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-black">
                 Every month, the tribe nominates Monkeez they choose to
                 highlight. These champions are models of the community and serve
                 as inspiration and example to others as we grow our brand
