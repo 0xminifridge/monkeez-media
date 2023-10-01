@@ -4,6 +4,7 @@ import Home from "./Home";
 import Gifs from "./Gifs";
 import MVP from "./MVP/MVP";
 import Footer from "./Footer";
+import PageNotFound from "./404";
 
 function Root() {
   return (
@@ -23,7 +24,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <></>,
+    errorElement: <PageNotFound title="404 | Monkeez Media" />,
     children: [
       {
         path: "/",

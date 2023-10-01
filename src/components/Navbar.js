@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MEDIA_FORM_URL } from "../constants/ExternalLinks";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const navLinks = [
@@ -7,6 +8,8 @@ export default function Navbar() {
     { name: "GIFS", path: "gifs" },
     { name: "SUBMISSION", path: MEDIA_FORM_URL, target: "_blank" },
   ];
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav class=" bg-primary z-[1000] sticky top-0">
@@ -27,9 +30,11 @@ export default function Navbar() {
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          // class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          class="box-shadow-custom ml-2 inline-flex items-center p-2 text-sm text-black rounded-lg md:hidden hover:border-white hover:text-white border-solid border-black border-2"
           aria-controls="navbar-solid-bg"
           aria-expanded="false"
+          onClick={() => setIsOpen(!isOpen)}
         >
           <span class="sr-only">Open main menu</span>
           <svg
@@ -49,10 +54,12 @@ export default function Navbar() {
           </svg>
         </button>
         <div
-          class="hidden w-full md:block md:w-auto text-black font-bold"
+          class={`${
+            isOpen ? "" : "hidden"
+          } w-full md:block md:w-auto text-black font-bold`}
           id="navbar-solid-bg"
         >
-          <ul class="text-black font-bold flex flex-col mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+          <ul class="text-black font-bold flex flex-col mt-4 rounded-lg bg-primary md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent duration-500">
             {navLinks.map((item, index) => {
               return (
                 <li key={index}>
@@ -61,6 +68,7 @@ export default function Navbar() {
                     class="block py-2 pl-3 pr-4 text-black font-bold md:p-0 hover:underline underline-offset-2"
                     aria-current="page"
                     target={item?.target}
+                    onClick={() => setIsOpen(false)}
                   >
                     {item?.name}
                   </Link>

@@ -40,7 +40,7 @@ export default function Gifs({ title }) {
         <div class="p-4">
           <div className="flex flex-col items-center justify-center">
             <div className="text-white text-center  mx-auto w-[85%] md:w-[60%]">
-              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight mb-4 text-shadow-custom">
+              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight mb-4 text-shadow-custom-sm md:text-shadow-custom">
                 Tribe Takeover
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl text-black pb-4">

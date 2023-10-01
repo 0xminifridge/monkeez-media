@@ -48,6 +48,10 @@
   text-shadow: 4px 4px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
 }
+.text-shadow-custom-sm {
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .box-shadow-custom {
   box-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,

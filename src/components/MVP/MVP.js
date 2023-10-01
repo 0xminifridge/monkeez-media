@@ -27,7 +27,7 @@ export default function MVP({ title }) {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-white text-center bg-primary border-black border-4 border-solid mx-auto w-[85%] md:w-[60%] p-4 rounded-xl">
-              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight mb-4 text-shadow-custom">
+              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight mb-4 text-shadow-custom-sm md:text-shadow-custom">
                 Community Champions
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl text-black">

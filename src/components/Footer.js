@@ -74,12 +74,12 @@ export default function Footer() {
           <div class="md:hidden flex flex-row justify-center">
             <img
               src={`${process.env.PUBLIC_URL}/images/footer/footer-left.png`}
-              class="md:hidden w-full max-w-[200px] aspect-square block"
+              class="md:hidden w-full max-w-[100px] aspect-square block"
               alt="Monkeez Logo"
             />
             <img
               src={`${process.env.PUBLIC_URL}/images/footer/footer-right.png`}
-              class="w-full max-w-[200px] aspect-square block "
+              class="w-full max-w-[100px] aspect-square block "
               alt="Monkeez Logo"
             />
           </div>
