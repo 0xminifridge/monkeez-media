@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export default function Home({ title }) {
   useEffect(() => {
     document.title = `${title} | Monkeez Media`;
+    window.scroll(0, 0);
   }, []);
   return (
     <div class="flex flex-col bg-gradient-to-b from-primary via-mnkz-wobo to-mnkz-api">
@@ -14,13 +15,13 @@ export default function Home({ title }) {
           alt="Background"
           className="w-full h-full object-cover"
         />
-        {/* <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-white text-center bg-primary border-black border-4 border-solid mx-auto w-[60%] p-4 rounded-xl">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 text-shadow-custom">
-            Monkeez Media
-          </h1>
-        </div>
-      </div> */}
+        {/* <div className="absolute inset-0 flex items-start justify-center">
+          <div className="text-white text-center  mx-auto md:w-[60%] p-4 rounded-xl">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold leading-tight text-shadow-custom">
+              Monkeez Media
+            </h1>
+          </div>
+        </div> */}
       </div>
       <div class="bg-gradient-to-b from-mnkz-wobo to-primary">
         <div class="md:w-[70%] mx-auto p-4 flex flex-col justify-center">

@@ -14,10 +14,11 @@ export default function Gifs({ title }) {
 
   useEffect(() => {
     document.title = `${title} | Monkeez Media`;
+    window.scroll(0, 0);
   }, []);
   return (
     <div class="h-full bg-primary">
-      <div class="w-full h-full p-4">
+      <div class="w-full h-full p-4 pt-0">
         <div className="relative h-[50vh] rounded-xl border-black border-solid border-4 overflow-hidden">
           <img
             src={`${process.env.PUBLIC_URL}/images/hero-gif.png`}
@@ -76,7 +77,7 @@ export default function Gifs({ title }) {
             </div>
             <div>
               <Link
-                class="font-bold px-4 py-2 box-shadow-custom bg-mnkz-tan rounded-xl text-black md:text-2xl hover:text-white border-2 border-black border-solid"
+                class="font-bold px-4 py-2 box-shadow-custom bg-mnkz-tan rounded-lg text-black md:text-2xl hover:text-white border-2 border-black border-solid"
                 to={GIPHY_URL}
                 target="_blank"
               >

@@ -15,6 +15,7 @@ export default function MVP({ title }) {
 
   useEffect(() => {
     document.title = `${title} | Monkeez Media`;
+    window.scroll(0, 0);
   }, []);
   return (
     <div class="h-full bg-primary">

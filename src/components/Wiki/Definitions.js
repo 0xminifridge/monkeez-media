@@ -7,7 +7,7 @@ export const Defintions = [
     example: "Been having so much fun hanging in the Zungle with my frens",
   },
   {
-    term: "Gold Jackets",
+    term: "Gold Jacket",
     partOfSpeech: "Noun",
     definition:
       "A coveted trait within the Monkeez due to it's scarcity and asthetic appeal. Gold jacket holders have been known to organize within small groups",

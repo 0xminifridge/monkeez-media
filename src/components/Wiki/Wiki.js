@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 export default function Wiki({ title }) {
   useEffect(() => {
     document.title = `${title} | Monkeez Media`;
+    window.scroll(0, 0);
   }, [title]);
 
   const [searchTerm, setSearchTerm] = useState("");

@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 export default function MVPCard({ item }) {
   const [hovering, setHovering] = useState(false);
   return (
-    <div
+    <Link
       class={`bg-primary border-4 relative rounded-2xl border-solid border-black  hover:cursor-pointer hover:-rotate-2 duration-200 w-full shadow-2xl box-shadow-custom-hoverable`}
       //   onClick={() => navigate(`/landz/${item?.id}`)}
       onMouseOver={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
+      to={`https://twitter.com/${item?.twitter}`}
+      target="_blank"
     >
       <div class="inline-block overflow-hidden m-0 relative rounded-t-xl">
         <img
@@ -21,18 +23,22 @@ export default function MVPCard({ item }) {
           alt="Card"
         />
       </div>
-      <div class="pb-5 px-5 flex flex-col">
+      <div
+        class={`pb-5 px-5 flex flex-col ${
+          hovering ? "text-mnkz-tan text-shadow-outline" : "text-black"
+        }`}
+      >
         <div class="overflow-hidden flex justify-center flex-row items-center text-center">
           <span class="text-xl lg:text-2xl xl:text-3xl font-bold mr-2">
             {item?.name}
           </span>
-          <Link
+          {/* <Link
             to={`https://twitter.com/${item?.twitter}`}
             target="_blank"
             class="hover:text-mnkz-tan"
           >
             <TwitterIcon width="30" height="30" />
-          </Link>
+          </Link> */}
         </div>
         {/* <div>
           <div>
@@ -45,6 +51,6 @@ export default function MVPCard({ item }) {
           <span class="align-center px-1">1: extractor</span>
         </div> */}
       </div>
-    </div>
+    </Link>
   );
 }
