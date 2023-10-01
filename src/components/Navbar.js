@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { MEDIA_FORM_URL } from "../constants/ExternalLinks";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
   const navLinks = [
     { name: "CHAMPS", path: "mvps" },
+    { name: "WIKI", path: "wiki" },
     { name: "GIFS", path: "gifs" },
-    { name: "SUBMISSION", path: MEDIA_FORM_URL, target: "_blank" },
+    { name: "UPLOAD", path: MEDIA_FORM_URL, target: "_blank" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);

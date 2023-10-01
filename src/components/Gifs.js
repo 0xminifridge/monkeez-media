@@ -49,7 +49,7 @@ export default function Gifs({ title }) {
                 ideas below by pressing the button
               </p>
               <Link
-                class="px-4 py-2 box-shadow-custom bg-mnkz-tan rounded text-black md:text-2xl hover:text-white"
+                class="font-bold px-4 py-2 box-shadow-custom bg-mnkz-tan rounded-lg text-black md:text-2xl hover:text-white border-2 border-black border-solid"
                 to={GIF_FORM_URL}
                 target="_blank"
               >
@@ -76,7 +76,7 @@ export default function Gifs({ title }) {
             </div>
             <div>
               <Link
-                class="px-4 py-2 box-shadow-custom bg-mnkz-tan rounded text-black md:text-2xl hover:text-white"
+                class="font-bold px-4 py-2 box-shadow-custom bg-mnkz-tan rounded-xl text-black md:text-2xl hover:text-white border-2 border-black border-solid"
                 to={GIPHY_URL}
                 target="_blank"
               >

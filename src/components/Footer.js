@@ -10,11 +10,25 @@ import {
   InstagramIcon,
   MediumIcon,
 } from "../assets/icons";
+import Marquee from "react-fast-marquee";
+
 export default function Footer() {
+  const times = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <div class="bg-primary">
+      <div class="border-4 border-black border-solid bg-[#231F20]">
+        <Marquee>
+          {times.map((item, index) => {
+            return (
+              <div class="px-4 text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary  to-mnkz-tan inline-block text-transparent bg-clip-text">
+                <span>Monkeez stronger together</span>
+              </div>
+            );
+          })}
+        </Marquee>
+      </div>
       <div class="w-full flex flex-wrap items-center justify-between px-4">
-        <div class="flex flex-col md:flex-row justify-between items-center w-[80%] mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center md:w-[80%] mx-auto">
           <img
             src={`${process.env.PUBLIC_URL}/images/footer/footer-left.png`}
             class="w-full max-w-[200px] aspect-square hidden md:block"

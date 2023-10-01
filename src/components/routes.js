@@ -5,6 +5,7 @@ import Gifs from "./Gifs";
 import MVP from "./MVP/MVP";
 import Footer from "./Footer";
 import PageNotFound from "./404";
+import Wiki from "./Wiki/Wiki";
 
 function Root() {
   return (
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
       {
         path: "/mvps",
         element: <MVP title={"CHAMPS"} />,
+      },
+      {
+        path: "/wiki",
+        element: <Wiki title={"WIKI"} />,
       },
     ],
   },
