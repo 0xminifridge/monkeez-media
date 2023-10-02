@@ -52,4 +52,22 @@ export const Defintions = [
     definition: "Shortand for Monkeez",
     example: "Let me see them keez!",
   },
+  {
+    term: "MNKZ",
+    partOfSpeech: "Noun",
+    definition: "Powering the Zungle, often found or taken in Zoog battles",
+    example: "Scored 100 $MNKZ from a Zoog battle. Nice",
+  },
+  {
+    term: "Zoogz",
+    partOfSpeech: "Noun",
+    definition: "Monkeez' best friend",
+    example: "I don't go anywhere without my trust Zoogz",
+  },
+  {
+    term: "Monkeez",
+    partOfSpeech: "Noun",
+    definition: "IYKYK. More than a PFP",
+    example: "I am my Monkeez and my Monkeez are me",
+  },
 ];
