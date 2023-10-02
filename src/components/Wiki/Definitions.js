@@ -62,7 +62,7 @@ export const Defintions = [
     term: "Zoogz",
     partOfSpeech: "Noun",
     definition: "Monkeez' best friend",
-    example: "I don't go anywhere without my trust Zoogz",
+    example: "I don't go anywhere without my trusty Zoogz",
   },
   {
     term: "Monkeez",
