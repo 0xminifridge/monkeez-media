@@ -70,4 +70,46 @@ export const Defintions = [
     definition: "IYKYK. More than a PFP",
     example: "I am my Monkeez and my Monkeez are me",
   },
+  {
+    term: "Api",
+    partOfSpeech: "Noun",
+    definition:
+      "Categorized by brown, white, and black furs, they are a tribe within a tribe and the most plentiful kind of Monkeez.",
+    example: "This Api is so clean",
+  },
+  {
+    term: "Wobo",
+    partOfSpeech: "Noun",
+    definition:
+      "Categorized by red, teal, purple, and yellow furs, they are a tribe within a tribe and the second most plentiful kind of Monkeez.",
+    example: "My Wobo's are so colorful",
+  },
+  {
+    term: "Xeba",
+    partOfSpeech: "Noun",
+    definition:
+      "Categorized by gold, rainbox, scaled, and cheetah furs, they are a tribe within a tribe and the second most rare kind of Monkeez.",
+    example: "Some of the Xebas remind me of cheetahs",
+  },
+  {
+    term: "Pelu",
+    partOfSpeech: "Noun",
+    definition:
+      "Categorized by galaxy, electric, zombie, and metal furs, they are a tribe within a tribe and the most rare kind of Monkeez.",
+    example: "Pelu's are my favorite",
+  },
+  {
+    term: "Rainbox",
+    partOfSpeech: "Adjective",
+    definition:
+      "Legend has it the traits was supposed to be named rainbow, if the dev didn't have such fat fingers",
+    example: "Rainbox furs are clean AF",
+  },
+  {
+    term: "Rainbox",
+    partOfSpeech: "Adjective",
+    definition:
+      "Legend has it the traits was supposed to be named rainbow, if the dev didn't have such fat fingers",
+    example: "Rainbox furs are clean AF",
+  },
 ];

@@ -16,7 +16,7 @@ export default function Footer() {
   const times = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <div class="bg-primary w-full">
-      <div class="w-full h-full bg-gradient-to-r from-mnkz-xeba via-mnkz-pelu to-mnkz-api py-1 overflow-hidden">
+      <div class="w-full h-full bg-gradient-to-r from-mnkz-pelu via-mnkz-xeba to-mnkz-api py-1 overflow-hidden">
         <div class="bg-[#231F20] overflow-hidden">
           <Marquee style={{ overflow: "hidden" }}>
             {times.map((item, index) => {
