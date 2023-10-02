@@ -33,7 +33,7 @@ export default function Wiki({ title }) {
     <div class="h-full min-h-[100vh] bg-primary">
       <div class="w-full h-full p-4">
         <div class="py-4 grid grid-cols-1 gap-4 w-full max-w-[700px] mx-auto">
-          <div className="mx-auto">
+          <div className="mx-auto text-center">
             <h1 class="text-4xl lg:text-6xl xl:text-7xl font-bold text-white text-shadow-custom">
               Monkeez Wiki
             </h1>
