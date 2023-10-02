@@ -27,7 +27,7 @@ export const Defintions = [
   },
   {
     term: "Mungle",
-    partOfSpeech: "Adverb",
+    partOfSpeech: "Verb",
     definition: "To fumble the bag, especially with NFTs",
     example:
       "Did you see Jerry's absolute mungle earlier? Traded for an avax treez",
@@ -44,6 +44,12 @@ export const Defintions = [
     definition:
       "Horns resembling those from a goat, yet weird to find on a Monkee",
     example:
-      "It's weird that Minifridge wears goat'd horns when he's more of the woat",
+      "It's weird that Minifridge wears goat'd horns when he's far from the G.O.A.T.",
+  },
+  {
+    term: "Keez",
+    partOfSpeech: "Noun",
+    definition: "Shortand for Monkeez",
+    example: "Let me see them keez!",
   },
 ];

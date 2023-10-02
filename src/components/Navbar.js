@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { MEDIA_FORM_URL } from "../constants/ExternalLinks";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const navLinks = [
@@ -12,8 +12,32 @@ export default function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    // Event listener to track scrolling
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav class=" bg-primary z-[1000] sticky top-0">
+    <nav
+      class={`${
+        isScrolled ? "bg-primary/80" : "bg-primary"
+      }  z-[1000] sticky top-0`}
+    >
       <div class="w-full flex flex-wrap items-center justify-between px-4">
         <Link
           to={"/"}
@@ -66,7 +90,7 @@ export default function Navbar() {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    class="block py-2 pl-3 pr-4 text-black font-bold md:p-0 hover:underline underline-offset-2"
+                    class="block  text-black font-bold py-2 hover:underline underline-offset-2"
                     aria-current="page"
                     target={item?.target}
                     onClick={() => setIsOpen(false)}
@@ -76,6 +100,17 @@ export default function Navbar() {
                 </li>
               );
             })}
+            <li>
+              <Link
+                to={"https://www.monkeez.io"}
+                class="block  text-white bg-gray-900 p-2 rounded-xl font-bold hover:bg-mnkz-tan hover:text-black underline-offset-2"
+                aria-current="page"
+                target="_blank"
+                onClick={() => setIsOpen(false)}
+              >
+                Main Site
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

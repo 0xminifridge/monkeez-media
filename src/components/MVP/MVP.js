@@ -32,10 +32,11 @@ export default function MVP({ title }) {
                 Community Champions
               </h1>
               <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-black">
-                Every month, the tribe nominates Monkeez they choose to
-                highlight. These champions are models of the community and serve
-                as inspiration and example to others as we grow our brand
-                together. Check them out below!
+                Periodically, the tribe nominates Monkeez they choose to
+                highlight for their contributions and efforts in our community.
+                These champions are models of the community and serve as
+                inspiration and example to others as we grow our brand together.
+                Check them out below!
               </p>
             </div>
           </div>

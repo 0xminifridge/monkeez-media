@@ -39,18 +39,18 @@ export default function Home({ title }) {
         <div class=" p-4 h-full min-h-[70vh]">
           <div class="text-center py-4">
             <h1 class="text-4xl lg:text-6xl xl:text-7xl font-bold text-white text-shadow-custom">
-              Latest Publications
+              Latest Words
             </h1>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4">
             {MediumData.map((item, index) => {
               return (
                 <Link
-                  class="bg-white p-4 border-solid border-black border-4 rounded-xl"
+                  class="bg-white p-4 border-solid border-black border-4 rounded-xl hover:border-mnkz-tan"
                   to={item?.url}
                   target="_blank"
                 >
-                  <div class="overflow-hidden rounded-xl bg-primary">
+                  <div class="overflow-hidden rounded-xl bg-primary border-4 border-black border-solid">
                     <img
                       src={`${item?.image}/${index}.png`}
                       class="block object-cover w-full max-w-[1000px] aspect-video"

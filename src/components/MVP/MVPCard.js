@@ -7,7 +7,7 @@ export default function MVPCard({ item }) {
   const [hovering, setHovering] = useState(false);
   return (
     <Link
-      class={`bg-primary border-4 relative rounded-2xl border-solid border-black  hover:cursor-pointer hover:-rotate-2 duration-200 w-full shadow-2xl box-shadow-custom-hoverable`}
+      class={`bg-black text-white border-4 relative rounded-2xl border-solid border-black  hover:cursor-pointer hover:-rotate-2 duration-200 w-full shadow-2xl box-shadow-custom-hoverable`}
       //   onClick={() => navigate(`/landz/${item?.id}`)}
       onMouseOver={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
@@ -25,7 +25,7 @@ export default function MVPCard({ item }) {
       </div>
       <div
         class={`pb-5 px-5 flex flex-col ${
-          hovering ? "text-mnkz-tan text-shadow-outline" : "text-black"
+          hovering ? "text-mnkz-tan" : "text-white"
         }`}
       >
         <div class="overflow-hidden flex justify-center flex-row items-center text-center">
