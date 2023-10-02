@@ -53,7 +53,7 @@ export default function Home({ title }) {
                   <div class="overflow-hidden rounded-xl bg-primary border-4 border-black border-solid">
                     <img
                       src={`${item?.image}/${index}.png`}
-                      class="block object-cover w-full max-w-[1000px] aspect-video"
+                      class="block object-cover aspect-video h-full max-h-[380px]"
                       alt={item?.name}
                     />
                   </div>
