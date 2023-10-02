@@ -18,7 +18,7 @@ export default function Footer() {
     <div class="bg-primary w-full">
       <div class="w-full h-full rounded-md bg-gradient-to-r from-mnkz-xeba via-mnkz-pelu to-mnkz-api p-1 overflow-hidden">
         <div class="bg-[#231F20] overflow-hidden">
-          <Marquee>
+          <Marquee class="overflow-hidden">
             {times.map((item, index) => {
               return (
                 <div
