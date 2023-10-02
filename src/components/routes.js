@@ -9,7 +9,7 @@ import Wiki from "./Wiki/Wiki";
 
 function Root() {
   return (
-    <main class="bg-white h-100 w-screen">
+    <main class="bg-white h-100 w-screen remove-bars">
       {/* {window.location.pathname !== "/" && <Navbar />} */}
       <div class="mx-auto">
         <Navbar />
