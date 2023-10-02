@@ -15,17 +15,22 @@ import Marquee from "react-fast-marquee";
 export default function Footer() {
   const times = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
-    <div class="bg-primary">
-      <div class="border-4 border-black border-solid bg-[#231F20]">
-        <Marquee>
-          {times.map((item, index) => {
-            return (
-              <div class="px-4 text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary  to-mnkz-tan inline-block text-transparent bg-clip-text">
-                <span>Monkeez stronger together</span>
-              </div>
-            );
-          })}
-        </Marquee>
+    <div class="bg-primary w-full">
+      <div class="w-full h-full rounded-md bg-gradient-to-r from-mnkz-xeba via-mnkz-pelu to-mnkz-api p-1 overflow-hidden">
+        <div class="bg-[#231F20]">
+          <Marquee>
+            {times.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  class="px-4 text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary  to-mnkz-tan inline-block text-transparent bg-clip-text"
+                >
+                  <span>Monkeez stronger together</span>
+                </div>
+              );
+            })}
+          </Marquee>
+        </div>
       </div>
       <div class="w-full flex flex-wrap items-center justify-between px-4">
         <div class="flex flex-col md:flex-row justify-between items-center md:w-[80%] mx-auto">

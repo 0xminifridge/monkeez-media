@@ -36,7 +36,7 @@ export default function Navbar() {
     <nav
       class={`${
         isScrolled ? "bg-primary/80" : "bg-primary"
-      }  z-[1000] sticky top-0`}
+      }  z-[1000] sticky top-0 w-full`}
     >
       <div class="w-full flex flex-wrap items-center justify-between px-4">
         <Link
