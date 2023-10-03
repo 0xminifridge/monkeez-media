@@ -12,7 +12,7 @@ export default function Gifs({ title }) {
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTI0M2t2Y3RycTZ5MTdhYmR6Mzg5MHh2ZHF6NHVzNmh1NnJ4azMwOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lVt17AI3NDSpdLmzUh/giphy.gif",
     "https://media.giphy.com/media/rnXOItFaYcoKS7a5P8/giphy.gif",
     "https://media.giphy.com/media/TL7OGS0Pqtr5gq3C2l/giphy.gif",
-    "https://media.giphy.com/media/jkMWFEguC8GvMQgAUs/giphy.gif",
+    "https://media.giphy.com/media/DxgVgwu14detXzPBFW/giphy.gif",
   ];
 
   useEffect(() => {
